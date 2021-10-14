@@ -1,0 +1,51 @@
+<language> Korean </language>
+<textcode> KSC-5601-1988 </textcode>
+<process> raw </process>
+<version> 2001(or)</version>
+<filename> kaistcorpus_written_raw_or_literature_novel_aca004.txt </filename>
+<title> 미스코리아 살인사건 </title>
+<author> 이승영 </author>
+<date> 1991 </date>
+<publisher> 추리문화사 </publisher>
+<kdc> 813.6 </kdc>
+<tdmsfiletext>
+               미스코리아 살인사건
+                                           이승영 저
+
+         작가소개                                            2
+
+         1. 죽음의 왕관                                      3
+
+         2. 캠코더의 암시                                   15
+
+         3. 살인은 마술이었을까?                            26
+
+         4. 범인은 없다                                     37
+
+         5. 폭로- 미스코리아 진은 자살했다                  61
+
+         6. 육감과 다수의 설전                              68
+
+         7. 아름다운 표적                                   76
+
+         8. 문제의 칵테일 잔                                84
+
+         9. 사라진 미녀                                    100
+
+        10. 추녀의 국적                                    114
+
+        11. 조물주의 미소                                  126
+
+        12. 죽음의 볼룸댄스                                144
+
+        13. 사건은 종결된 것일까?                          165
+
+        14. 진실을 향하여                                  182
+
+        15. 무서운 본능                                    210
+
+       
+       
+     
+
+</tdmsfiletext>

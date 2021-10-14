@@ -1,0 +1,63 @@
+<language> Korean </language>
+<textcode> KSC-5601-1988 </textcode>
+<process> raw </process>
+<version> 2001(or)</version>
+<filename> kaistcorpus_written_raw_or_literature_novel_aca111.txt </filename>
+<title> 여자 곱하기 남자 </title>
+<author> 백휴 </author>
+<date> 1996 </date>
+<publisher> 해난터 </publisher>
+<kdc> 813.6 </kdc>
+<tdmsfiletext>
+                  여자 곱하기 남자
+                                     백휴 저
+
+              작가 소개
+
+              작가의 말
+
+              <1>
+
+              <2>
+
+              <3>
+
+              <4>
+
+              <5>
+
+              <6>
+
+              <7>
+
+              <8>
+
+              <9>
+
+              <10>
+
+              <11>
+
+              <12>
+
+              <13>
+
+              <14>
+
+              <15>
+
+              <16>
+
+              <17>
+
+              <18>
+
+              <19>
+
+              <20>
+
+            
+            
+          
+
+</tdmsfiletext>

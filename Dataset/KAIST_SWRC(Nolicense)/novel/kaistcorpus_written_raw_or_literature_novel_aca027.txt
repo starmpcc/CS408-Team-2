@@ -1,0 +1,29 @@
+<language> Korean </language>
+<textcode> KSC-5601-1988 </textcode>
+<process> raw </process>
+<version> 2001(or)</version>
+<filename> kaistcorpus_written_raw_or_literature_novel_aca027.txt </filename>
+<title> 비밀의 연인(하) </title>
+<author> 김성종 </author>
+<date> 1993 </date>
+<publisher> 해냄 </publisher>
+<kdc> 813.6 </kdc>
+<tdmsfiletext>
+                   비밀의 연인(하)
+                                           김성종 저
+
+         작가 소개                                           2
+
+         1. 애증의 조건                                      3
+
+         2. 고독과 굴욕                                     55
+
+         3. 어머니와 딸                                    119
+
+         4. 배반의 계절                                    159
+
+       
+       
+     
+
+</tdmsfiletext>

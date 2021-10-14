@@ -1,0 +1,67 @@
+<language> Korean </language>
+<textcode> KSC-5601-1988 </textcode>
+<process> raw </process>
+<version> 2001(or)</version>
+<filename> kaistcorpus_written_raw_or_literature_novel_aca109.txt </filename>
+<title> 서울의 만가(상) </title>
+<author> 김성종 </author>
+<date> 1995 </date>
+<publisher> 해난터 </publisher>
+<kdc> 813.6 </kdc>
+<tdmsfiletext>
+                    서울의 만가(상)
+                                   김성종 저
+
+              작가 소개
+
+              1. 사라진 소녀
+
+              2. 무서운 밤
+
+              3. 기다리는 밤
+
+              4. 돌아오지 않는 소녀
+
+              5. 어두운 거리
+
+              6. 미행
+
+              7. 거래
+
+              8. 살인
+
+              9. 수사
+
+             10. 김 교수
+
+             11. 교수와 소녀
+
+             12. 소녀의 눈물
+
+             13. 애꾸눈
+
+             14. 몽타주의 여인
+
+             15. 빨간 티셔츠
+
+             16. 유인
+
+             17. 살인자의 손
+
+             18. 범인들
+
+             19. 아기
+
+             20. 납치
+
+             21. 이상한 사람들
+
+             22. 팔려가는 여자들
+
+             23. 눈에는 눈
+
+            
+            
+          
+
+</tdmsfiletext>

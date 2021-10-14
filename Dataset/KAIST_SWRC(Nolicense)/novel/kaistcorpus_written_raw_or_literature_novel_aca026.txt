@@ -1,0 +1,65 @@
+<language> Korean </language>
+<textcode> KSC-5601-1988 </textcode>
+<process> raw </process>
+<version> 2001(or)</version>
+<filename> kaistcorpus_written_raw_or_literature_novel_aca026.txt </filename>
+<title> 낙원의 저쪽(상) </title>
+<author> 백휴 </author>
+<date> 1993 </date>
+<publisher> 남도 </publisher>
+<kdc> 813.6 </kdc>
+<tdmsfiletext>
+                    낙원의 저쪽(상)
+                                     백휴 저
+
+              작가 소개
+
+              작가의 말
+
+            제1부 사랑
+              1. 제2의 고향
+
+              2. 순결
+
+              3. 연정(戀情)
+
+              4. 비둘기의 죽음
+
+              5. 불감증 환자 정은경
+
+              6. 자유 연상법
+
+              7. 돈 후안의 사고방식
+
+              8. 형사와 살인용의자
+
+              9. 거부 못할 편지
+
+              10. 불청객의 인동하
+
+              11. 효진의 실종
+
+              12. 불안한 고독
+
+              13. 충격적인 고백
+
+              14. 비디오 테이프
+
+              15. 어머니
+
+              16. 논쟁
+
+              17. 고독의 방
+
+            제2부 죽음
+              2부로 넘어가면서
+
+              1. 광기
+
+              2. 악마의 화신
+
+            
+            
+          
+
+</tdmsfiletext>

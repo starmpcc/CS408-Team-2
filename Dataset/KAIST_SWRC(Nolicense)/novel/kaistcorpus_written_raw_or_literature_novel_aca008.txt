@@ -1,0 +1,43 @@
+<language> Korean </language>
+<textcode> KSC-5601-1988 </textcode>
+<process> raw </process>
+<version> 2001(or)</version>
+<filename> kaistcorpus_written_raw_or_literature_novel_aca008.txt </filename>
+<title> 불타는 욕망 </title>
+<author> 한대희 </author>
+<date> 1988 </date>
+<publisher> 한대희 </publisher>
+<kdc> 813.6 </kdc>
+<tdmsfiletext>
+                       불타는 욕망
+                                          한 대희 저
+
+         작가 소개                                           2
+
+         1. 프롤로그                                         3
+
+         2. 아메리카 특급작전                                6
+
+         3. 출발과 출발                                     30
+
+         4. 해 후                                           48
+
+         5. 비탈에 선 사람들                                69
+
+         6. 전화위복                                        89
+
+         7. 무더운 여름.                                   113
+
+         8. 특명 X                                         136
+
+         9. 거 인 들                                       161
+
+         10. 위기의 사흘                                   181
+
+         11. 승자와 패자.                                  195
+
+       
+       
+     
+
+</tdmsfiletext>

@@ -1,0 +1,47 @@
+<language> Korean </language>
+<textcode> KSC-5601-1988 </textcode>
+<process> raw </process>
+<version> 2001(or)</version>
+<filename> kaistcorpus_written_raw_or_literature_novel_aca091.txt </filename>
+<title> 찬란한 음모 </title>
+<author> 이원두 </author>
+<date> 1996 </date>
+<publisher> 고려원미디어 </publisher>
+<kdc> 813.6 </kdc>
+<tdmsfiletext>
+                       찬란한 음모
+                                           이원두 저
+
+         작가소개                                            2
+
+         1. 프롤로그                                         3
+
+         2. 부도날 때는 사랑을......                        10
+
+         3. 고감도(高感度) 실마리                           22
+
+         4. 2백킬로와 닷새사이                              39
+
+         5. 기분은 열녀                                     54
+
+         6. 주막집 증언                                     69
+
+         7. 처녀탐정 죽다                                   89
+
+         8. 뺑소니 사고                                    102
+
+         9. 인형의 비밀                                    117
+
+        10. 미행                                           126
+
+        11. 지하 우정(地下 友情)                           149
+
+        12. 별장의 불                                      162
+
+        13. 에필로그                                       174
+
+       
+       
+     
+
+</tdmsfiletext>

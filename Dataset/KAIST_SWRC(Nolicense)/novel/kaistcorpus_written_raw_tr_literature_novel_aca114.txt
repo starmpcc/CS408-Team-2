@@ -1,0 +1,51 @@
+<language> Korean </language>
+<textcode> KSC-5601-1988 </textcode>
+<process> raw </process>
+<version> 2001(tr)</version>
+<filename> kaistcorpus_written_raw_tr_literature_novel_aca114.txt </filename>
+<title> 카멜레온(하) </title>
+<author> 윌리엄 딜 </author>
+<date> 1993 </date>
+<publisher> 산하 </publisher>
+<kdc> 843 </kdc>
+<tdmsfiletext>
+                       카멜레온(하)
+                      윌리엄 딜 저/정태원 역
+
+              <작가 소개>                                 2
+
+              1. 다니로프의 고백                          3
+
+              2. 암호 해독                               24
+
+              3. 후커 장군                               34
+
+              4. 카멜레온을 찾아서                       45
+
+              5. 습격                                    54
+
+              6. 또하나의 연인 다나                      68
+
+              7. 검도 사범 오카리                        72
+
+              8. 거대 기업 암란                          74
+
+              9. 수수께끼의 여인                         94
+
+             10. 카멜레온의 정체                         99
+
+             11. 대결                                   110
+
+             12. 회의                                   122
+
+             13. 용의 보금자리                          139
+
+             14. 1000일의 정진                          148
+
+              <옮긴이의 말>                             156
+
+            
+            
+          
+
+</tdmsfiletext>

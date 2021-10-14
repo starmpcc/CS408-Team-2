@@ -1,0 +1,35 @@
+<language> Korean </language>
+<textcode> KSC-5601-1988 </textcode>
+<process> raw </process>
+<version> 2001(or)</version>
+<filename> kaistcorpus_written_raw_or_literature_novel_aca063.txt </filename>
+<title> 영혼의 파괴자(하) </title>
+<author> 이수광 </author>
+<date> 1995 </date>
+<publisher> 세명문화사 </publisher>
+<kdc> 813.6 </kdc>
+<tdmsfiletext>
+                 영혼의 파괴자(하)
+                                           이수광 저
+
+         작가 소개                                           2
+
+         제15장에서 계속                                     3
+
+         제16장 사랑과 슬픔의 광시곡                        12
+
+         제17장 나비는 청산에 묻히고                        44
+
+         제18장 악마의 숨소리                               82
+
+         제19장 살인자를 찾아서                            119
+
+         제20장 빗속에 지다                                173
+
+         에필로그                                          202
+
+       
+       
+     
+
+</tdmsfiletext>

@@ -1,0 +1,40 @@
+<language> Korean </language>
+<textcode> KSC-5601-1988 </textcode>
+<process> raw </process>
+<version> 2001(or)</version>
+<filename> kaistcorpus_written_raw_or_literature_novel_acb008.txt </filename>
+<title> 레기오스(제1권) </title>
+<author> 임달영 </author>
+<date> </date>
+<publisher> </publisher>
+<kdc> 813.6 </kdc>
+<tdmsfiletext>
+                    레기오스(제1권)
+       <알테아마의 장(지구서)>
+                                   임달영 저
+
+              <작가소개>                                  2
+
+              역귀(逆鬼)의 말로(末路)                     3
+
+              <용어 설명>                                 4
+
+              <프롤로그>                                  9
+
+              <1> 리셀리아                               23
+
+              <2> 다가오는 공포                          43
+
+              <3> 꿈                                     72
+
+              <4> 최초의 각성                            95
+
+              <5> 이계의 친구                           129
+
+              <6> 미레니암 골드                         175
+
+            
+            
+          
+
+</tdmsfiletext>

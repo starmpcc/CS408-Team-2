@@ -1,0 +1,41 @@
+<language> Korean </language>
+<textcode> KSC-5601-1988 </textcode>
+<process> raw </process>
+<version> 2001(or)</version>
+<filename> kaistcorpus_written_raw_or_literature_novel_aca081.txt </filename>
+<title> 불타는 여인(하) </title>
+<author> 김성종 </author>
+<date> 1990 </date>
+<publisher> 추리문화사 </publisher>
+<kdc> 813.6 </kdc>
+<tdmsfiletext>
+                    불타는 여인(하)
+                                   김성종 저
+
+              작가 소개
+
+              1. AIDS 환자
+
+              2. 迷路의 함정
+
+              3. 生 命
+
+              4. 추 적
+
+              5. 연쇄살인
+
+              6. 죽음의 그림자
+
+              7. 토막시체
+
+              8. 위조 전문가
+
+              9. 위조 여권
+
+             10. 두개의 얼굴
+
+            
+            
+          
+
+</tdmsfiletext>

@@ -1,0 +1,43 @@
+<language> Korean </language>
+<textcode> KSC-5601-1988 </textcode>
+<process> raw </process>
+<version> 2001(tr)</version>
+<filename> kaistcorpus_written_raw_tr_literature_novel_aca112.txt </filename>
+<title> 카멜레온(상) </title>
+<author> 윌리엄 딜 </author>
+<date> 1993 </date>
+<publisher> 산하 </publisher>
+<kdc> 843 </kdc>
+<tdmsfiletext>
+                       카멜레온(상)
+                     윌리엄 딜 저/정 태원 역
+
+              <작가 소개>                                 2
+
+              <주요 등장 인물>                            3
+
+              <프롤로그>                                  4
+
+              1. 환상의 자동차, 아퀼라 밀레나             8
+
+              2. 폭풍우의 밤                             30
+
+              3. 접선                                    50
+
+              4. 크리스마스 선물                         59
+
+              5. 여기자 엘리자 건                        66
+
+              6. 일본을 떠나라                           72
+
+              7. 특종                                    83
+
+              8. 추적 끝의 만남                         102
+
+              9. 사랑해요, 오하라                       137
+
+            4
+            
+          
+
+</tdmsfiletext>

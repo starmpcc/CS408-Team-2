@@ -1,0 +1,61 @@
+<language> Korean </language>
+<textcode> KSC-5601-1988 </textcode>
+<process> raw </process>
+<version> 2001(tr)</version>
+<filename> kaistcorpus_written_raw_tr_literature_novel_aca104.txt </filename>
+<title> 파리의 밤은 깊어    </title>
+<author> 노엘 칼레프 </author>
+<date> 1990 </date>
+<publisher> 해문출판사 </publisher>
+<kdc> 843 </kdc>
+<tdmsfiletext>
+                  파리의 밤은 깊어
+                              노엘 카레프 저
+
+              작가 소개
+
+              제 1 장
+
+              제 2 장
+
+              제 3 장
+
+              제 4 장
+
+              제 5 장
+
+              제 6 장
+
+              제 7 장
+
+              제 8 장
+
+              제 9 장
+
+              제 10 장
+
+              제 11 장
+
+              제 12 장
+
+              제 13 장
+
+              제 14 장
+
+              제 15 장
+
+              제 16 장
+
+              제 17 장
+
+              제 18 장
+
+              제 19 장
+
+              제 20 장
+
+            
+            
+          
+
+</tdmsfiletext>

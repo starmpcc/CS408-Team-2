@@ -1,0 +1,71 @@
+<language> Korean </language>
+<textcode> KSC-5601-1988 </textcode>
+<process> raw </process>
+<version> 2001(or)</version>
+<filename> kaistcorpus_written_raw_or_literature_novel_aca038.txt </filename>
+<title> 내 안의 악마 </title>
+<author> 이수광 </author>
+<date> 1993 </date>
+<publisher> 수목출판사 </publisher>
+<kdc> 813.6 </kdc>
+<tdmsfiletext>
+                       내안의 악마
+                                           이수광 저
+
+         작가 소개                                           2
+
+         머리말                                              3
+
+         1                                                   4
+
+         2                                                  11
+
+         3                                                  20
+
+         4                                                  33
+
+         5                                                  40
+
+         6                                                  48
+
+         7                                                  59
+
+         8                                                  67
+
+         9                                                  72
+
+         10                                                 81
+
+         11                                                 86
+
+         12                                                 94
+
+         13                                                100
+
+         14                                                108
+
+         15                                                116
+
+         16                                                127
+
+         17                                                134
+
+         18                                                141
+
+         19                                                150
+
+         20                                                156
+
+         21                                                161
+
+         22                                                165
+
+         23                                                173
+
+         24                                                177
+
+       
+       
+     
+
+</tdmsfiletext>

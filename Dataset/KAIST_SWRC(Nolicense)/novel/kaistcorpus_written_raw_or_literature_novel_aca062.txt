@@ -1,0 +1,33 @@
+<language> Korean </language>
+<textcode> KSC-5601-1988 </textcode>
+<process> raw </process>
+<version> 2001(or)</version>
+<filename> kaistcorpus_written_raw_or_literature_novel_aca062.txt </filename>
+<title> 영혼의 파괴자(중) </title>
+<author> 이수광 </author>
+<date> 1995 </date>
+<publisher> 세명문화사 </publisher>
+<kdc> 813.6 </kdc>
+<tdmsfiletext>
+                 영혼의 파괴자(중)
+                                           이수광 저
+
+         작가 소개                                           2
+
+         제10장 별들의 전쟁                                  3
+
+         제11장 서울에는 봄이 없다.                         25
+
+         제12장 영혼이 없다                                 75
+
+         제13장 길고 어두운 밤의 시작                      110
+
+         제14장 울 밑에 선 봉선화야                        154
+
+         제15장 산 자는 따르라                             169
+
+       
+       
+     
+
+</tdmsfiletext>

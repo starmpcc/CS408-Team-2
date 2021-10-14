@@ -1,0 +1,32 @@
+<language> Korean </language>
+<textcode> KSC-5601-1988 </textcode>
+<process> raw </process>
+<version> 2001(tr)</version>
+<filename> kaistcorpus_written_raw_tr_literature_novel_aca103.txt </filename>
+<title> 르윈터의 망명    </title>
+<author> 로버트 리텔 </author>
+<date> 1990 </date>
+<publisher> 해문출판사 </publisher>
+<kdc> 843 </kdc>
+<tdmsfiletext>
+                     르윈터의 망명
+                                 로버트 린텔
+
+              작가 소개
+
+              제1부 초반전
+
+              제2부 응수(應手)
+
+              제3부 중반전
+
+              제4부 공격준비
+
+              제5부 종반전
+
+              제6부 버리는 말
+
+            
+            
+          
+</tdmsfiletext>

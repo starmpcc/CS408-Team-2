@@ -1,0 +1,47 @@
+<language> Korean </language>
+<textcode> KSC-5601-1988 </textcode>
+<process> raw </process>
+<version> 2001(tr)</version>
+<filename> kaistcorpus_written_raw_tr_literature_novel_aca106.txt </filename>
+<title> 내가 심판한다 </title>
+<author> 미키 스필레인 </author>
+<date> 1990 </date>
+<publisher> 해문출판사 </publisher>
+<kdc> 843 </kdc>
+<tdmsfiletext>
+                     내가 심판한다
+                            미키 스필레인 저
+
+              작가 소개
+
+              제 1 장
+
+              제 2 장
+
+              제 3 장
+
+              제 4 장
+
+              제 5 장
+
+              제 6 장
+
+              제 7 장
+
+              제 8 장
+
+              제 9 장
+
+              제 10 장
+
+              제 11 장
+
+              제 12 장
+
+              제 13 장
+
+            
+            
+          
+
+</tdmsfiletext>
