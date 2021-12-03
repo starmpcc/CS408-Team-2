@@ -1,0 +1,43 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Interactive Novel Web{% endblock %}
+
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+{{ moment.include_jquery() }}
+{{ moment.include_moment() }}
+{{ moment.lang("ko") }}
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+<script type='text/javascript'>
+$(document).ready(function() {
+    var activeTab = localStorage.getItem('activeTab');
+
+    if (activeTab) {
+        console.log('activeTab: :', activeTab);
+        localStorage.removeItem('activeTab')
+    }
+});
+</script>
+{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/home">Interactive Novel</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/home">Home</a><li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  {% block page_content %}{% endblock %}
+</div>
+{% endblock %}

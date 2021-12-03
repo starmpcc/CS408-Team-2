@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Interactive Novel{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+  {% with messages = get_flashed_messages() %}
+  
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-info">
+                <strong> 작업을 선택하세요. </strong>
+            </div>
+        {% endfor %}
+    {% endif %}
+  {% endwith %}
+
+<h2> 한국어 대화형 소설 작성 시스템 </h2>
+<br>
+<br>
+
+{% include '_not_ready_popup.html' %}
+
+<div class="container">
+    <div id="interactive_novel" class="col-md-6">
+      <h3>  새로운 소설 작성 </h3>
+      <br>
+          {{ wtf.quick_form(new_start) }}
+      <br>
+    </div>
+    <div id="load_novels" class="col-md-6">
+      <h3>  기존에 작성된 소설 이어가기 </h3>
+      <br>
+          {{ wtf.quick_form(load_saved) }}
+      <br>
+    </div>
+</div>
+
+
+{% endblock %}

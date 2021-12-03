@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Interactive Novel{% endblock %}
+
+{% block page_content %}
+
+<h2> Model is not ready.
+    <br>
+     <small class="text-muted"> 해당 태스크는 아직 작업중입니다.  </small>
+</h2>
+<br>
+    <a href="{{ url_for('.home') }}">
+          <button class="btn btn-primary pull-left btn-sm">확인</button>
+    </a>
+<br>
+<br>
+<br>
+
+<img src='/static/image/work_in_progress.png' class='rounded float-center' alt='work in progress'>
+
+{% endblock %}
