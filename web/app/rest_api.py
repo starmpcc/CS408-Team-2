@@ -5,6 +5,10 @@ from flask import Flask, request
 from flask_restful import reqparse, abort, Api, Resource
 import json, os, sys, time
 from . import datastore as ds
+sys.path.append('/root/CS408-Team-2/model')
+from model_helper import Model
+import json
+model =Model()
 
 DEBUG = False
 
@@ -20,12 +24,16 @@ class get_saved_novels(Resource):
 
 class generate_next(Resource):
     def get(self):
-        inp = request.get_json()
-        print("input body : ", inp)
 
-        outp = "Computer Said: 집에 가서 자자."
+        params = request.get_json()
+ 
+        inp = params["inp"]
+        context = params["context"]
+
+        outp = model.generate(inp, context)
         return {"status": "success",
-                "model_answer": outp}
+                "model_answer": outp,
+                "context": context}
 
 
 class save_novel(Resource):

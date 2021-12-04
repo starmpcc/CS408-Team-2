@@ -2,8 +2,7 @@
 sample web with flask_web
 '''
 import os
-os.chdir(os.path.abspath(""))
-API_HOME = "web"
+API_HOME = "/root/CS408-Team-2/web"
 SQL_HOME = os.path.join(API_HOME, "sqldb_dir")
 if not os.path.exists(SQL_HOME):
     os.makedirs(SQL_HOME, exist_ok=True)
