@@ -6,7 +6,7 @@ import os, sys, datetime
 from flask import Flask, flash, request, render_template, session, redirect, url_for, current_app, Response
 from . import web
 from .forms import NewNovelForm, LoadSavedInputForm, GetUserTextForm, CurrentNovelDisplay
-
+import requests, json
 
 DEBUG = True
 pd.options.display.float_format = lambda x: '{:,.0f}'.format(x) if x > 1e3 else '{:,.2f}'.format(x)
@@ -61,7 +61,17 @@ def interactive_novel():
 
     if next_form.validate_on_submit():
         user_enter = next_form.user_enter.data
-        model_answer = "기계가 이렇게 말했다고 합니다."
+        context = ""
+        data = {
+            "inp" : "Hello.",
+            "context" : ""
+        }
+        output = requests.get(url="http://0.0.0.0:5000/api/generate_next", json = data)
+        print(output)
+        output = output.json()
+        print(output)
+        model_answer = output["model_answer"]
+        context = ["context"]
 
         session["history"].append((user_enter, model_answer))
         return render_template("interactive_novel.html",
