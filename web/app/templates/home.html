@@ -22,16 +22,11 @@
 
 
 <div class="container">
-    <div id="interactive_novel" class="col-md-6">
-      <h3>  새로운 소설 작성 </h3>
+    <div id="load_novels" class="col-md-offset-3 col-md-6">
+      <h3>  로그인 </h3>
       <br>
-          {{ wtf.quick_form(new_start) }}
-      <br>
-    </div>
-    <div id="load_novels" class="col-md-6">
-      <h3>  기존에 작성된 소설 이어가기 </h3>
-      <br>
-          {{ wtf.quick_form(load_saved) }}
+          {{ wtf.quick_form(login) }}
+          {{ wtf.quick_form(register) }}
       <br>
     </div>
 </div>

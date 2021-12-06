@@ -33,7 +33,9 @@ InteractiveNovelModel
 
 id          : 키값
 userid		: User
-contents    : Text
+title       : Text
+history     : Pickle
+context     : Text
 timestamp   : 저장 시각
 '''
 
@@ -41,14 +43,18 @@ class InteractiveNovelModel(db.Model):
     __tablename__ = 'novel_table'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     userid = db.Column(db.Integer, ForeignKey("user_table.id"), nullable=False)
-    contents = db.Column(db.UnicodeText())
+    title = db.Column(db.UnicodeText())
+    history = db.Column(db.PickleType())
+    context = db.Column(db.UnicodeText())
     timestamp = db.Column(db.DateTime(timezone=True), server_default=func.now())
 
     def __repr__(self):
-        return '<InteractiveNovel {}>'.format(self.user_id)
+        return '<InteractiveNovel {}>'.format(self.userid)
 
-    def __init__(self, user_id, save_text):
+    def __init__(self, user_id, title, history, context):
         self.timestamp = func.now()
         self.userid = user_id
-        self.contents = save_text
+        self.title = title
+        self.history = history
+        self.context = context
 

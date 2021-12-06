@@ -1,6 +1,8 @@
 #-*- coding:utf-8 -*-
 from sqlalchemy.exc import IntegrityError
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.sql import func
+
 import os, sys, datetime
 import pandas as pd
 
@@ -8,36 +10,47 @@ from . import db
 from .models import UserModel, InteractiveNovelModel
 
 
-def user_add_ifnot(username, password):
+def user_add(username, password):
+
     found_user = UserModel.query.filter_by(username=username).first()
 
     if found_user:
-        return found_user.id
+        return None
     else:
         t = UserModel(username=username, password=password)
         db.session.add(t)
         db.session.commit()
         return t.id
 
+def user_login(username, password):
+    user = UserModel.query.filter_by(username = username).first()
+    if user and user.password == password:
+        return user.id
+    return None
 
-def save_novel(username, password, contents):
-    userid = user_add_ifnot(username, password)
+def save_novel(user_id, novel_id, title, history, context):
+    if novel_id:
+        novel = InteractiveNovelModel.query.get(novel_id) 
+        novel.title = title
+        novel.history = history
+        novel.context = context
+        novel.timestamp = func.now()
+        db.session.commit()
+        return novel.id
+    else:
+        novel = InteractiveNovelModel(user_id, title, history, context)
+        db.session.add(novel)
+        db.session.commit()
+        return novel.id
 
-    # print("userid -> {}".format(userid))
-    t = InteractiveNovelModel(user_id=userid, save_text=contents)
-    db.session.add(t)
-    db.session.commit()
+def load_novel(novel_id):
+    novel = InteractiveNovelModel.query.get(novel_id)
+    return novel
 
+def get_user_saved_novels(id):
 
-def get_user_saved_nodels(username):
-    found_user = UserModel.query.filter_by(username=username).first()
+    result = InteractiveNovelModel.query.filter_by(userid=id).all()
+    novel_list = list(map(lambda x: (x.id, x.title), result))
 
-    if not found_user:
-        return "{}"
-
-    # InteractiveNovelModel.query.filter_by(userid=found_user.id).limit(3)
-    result_ = db.engine.execute("select timestamp, contents from novel_table where userid={}".format(found_user.id))
-    result_df = pd.DataFrame(result_.fetchall(), columns=['timestamp', 'contents'])
-    result_df = result_df.sort_values(by="timestamp", ascending=False).head(3)
-    return result_df.to_json(orient="records")
+    return novel_list
 

@@ -35,15 +35,13 @@ def create_app(config_name):
     # create database if not exist 
     with app.test_request_context():
         from .models import UserModel, InteractiveNovelModel
-        from .rest_api import get_saved_novels, generate_next, save_novel, delete_novel
+        from .rest_api import generate_next
 
         db.create_all()
         print('database created at {}'.format(config[config_name].SQLALCHEMY_DATABASE_URI))
 
-        api.add_resource(get_saved_novels, "/api/get_saved_novels")
         api.add_resource(generate_next, "/api/generate_next")
-        api.add_resource(save_novel, "/api/save_novel")
-        api.add_resource(delete_novel, "/api/delete_novel")
+
 
     app.register_blueprint(web_blueprint)
 

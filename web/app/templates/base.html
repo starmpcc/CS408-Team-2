@@ -25,11 +25,23 @@ $(document).ready(function() {
 <div class="navbar navbar-inverse" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="/home">Interactive Novel</a>
+      <a class="navbar-brand" href=
+      {% if session.get('id') %}
+      "/saved_novels"
+      {% else %}
+      "/home"
+      {% endif %}
+      >Interactive Novel</a>
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li><a href="/home">Home</a><li>
+        <li><a href=
+          {% if session.get('id') %}
+          "/saved_novels"
+          {% else %}
+          "/home"
+          {% endif %}
+          >Home</a><li>
       </ul>
     </div>
   </div>
