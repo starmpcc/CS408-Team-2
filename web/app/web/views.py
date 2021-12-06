@@ -12,13 +12,6 @@ DEBUG = True
 pd.options.display.float_format = lambda x: '{:,.0f}'.format(x) if x > 1e3 else '{:,.2f}'.format(x)
 
 
-def build_current_context(a, b):
-    current_form = CurrentNovelDisplay()
-    current_form.user_enter.data = a
-    current_form.model_answer.data = b
-    return current_form
-
-
 @web.route('/')
 def root():
     return redirect(url_for('.home'))
@@ -34,9 +27,11 @@ def home():
     form1 = NewNovelForm()
     if form1.validate_on_submit():
         session["history"] = []
+        session["context"] = ""
+        session["title"] = "제목 없는 소설"
         return redirect(url_for(".interactive_novel",
                                 novel_number=1,
-                                current_context=build_current_context("", ""),
+                                dialogue = session["history"],
                                 next_from=GetUserTextForm()))
 
     elif form2.validate_on_submit():
@@ -63,29 +58,24 @@ def interactive_novel():
         user_enter = next_form.user_enter.data
         context = ""
         data = {
-            "inp" : "Hello.",
-            "context" : ""
+            "inp" : user_enter,
+            "context" : session['context']
         }
         output = requests.get(url="http://0.0.0.0:5000/api/generate_next", json = data)
-        print(output)
         output = output.json()
-        print(output)
         model_answer = output["model_answer"]
-        context = ["context"]
-
+        session["context"] = output["context"]
         session["history"].append((user_enter, model_answer))
+        print("history: ", session["history"])
+        print("context: ", session["context"])
         return render_template("interactive_novel.html",
-                               novel_number=1,
-                               current_context=build_current_context(user_enter, model_answer),
+                               novel_title=session["title"],
+                               dialogue = session["history"],
                                next_form=GetUserTextForm())
 
-    if len(session["history"]) > 0:
-        next_novel = session["history"][-1]
-    else:
-        next_novel = ("", "")
 
     return render_template("interactive_novel.html",
-                           novel_number=1,
-                           current_context=build_current_context(next_novel[0], next_novel[1]),
+                           novel_title=session["title"],
+                           dialogue = session["history"],
                            next_form=GetUserTextForm())
 

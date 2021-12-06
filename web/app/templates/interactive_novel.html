@@ -1,7 +1,11 @@
+
 {% extends "base.html" %}
 {% import "bootstrap/wtf.html" as wtf %}
-
-{% block title %}{{title}}{% endblock %}
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static', filename='css/interactive_novel.css') }}">
+{% endblock %}
+{% block title %}{{novel_title}}{% endblock %}
 
 {% block page_content %}
 <div class="page-header">
@@ -16,21 +20,26 @@
     {% endif %}
   {% endwith %}
 
-<h2> <center> 소설 {{ novel_number }} </center> </h2>
+<h2> <center> {{ novel_title }} </center> </h2>
 <br>
 <br>
 
-<div class="container">
-    <div id="interactive_novel" class="col-md-12">
-      {{ wtf.quick_form(current_context) }}
-        <br>
-        <br>
-            아이콘들
-        <br>
-        <br>
-      {{ wtf.quick_form(next_form) }}
-      <br>
+<div id="dialogue_container" class="col-md-12">
+  {% for chat in dialogue%}
+    <div class="history_user col-md-offset-3 col-md-9">
+      {{chat[0]}}
     </div>
+    <div class="history_model col-md-9">
+      {{chat[1]}}
+    </div>
+  {%endfor%}
+  <script>
+    $('#dialogue_container').scrollTop($("#dialogue_container")[0].scrollHeight)
+  </script>
+</div>
+<div id="interactive_novel" class="col-md-12 sticky-bottom">
+  {{ wtf.quick_form(next_form) }}
+  <br>
 </div>
 
 

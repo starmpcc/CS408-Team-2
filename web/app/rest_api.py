@@ -29,8 +29,7 @@ class generate_next(Resource):
  
         inp = params["inp"]
         context = params["context"]
-
-        outp = model.generate(inp, context)
+        outp, context = model.generate(inp, context)
         return {"status": "success",
                 "model_answer": outp,
                 "context": context}
