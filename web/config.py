@@ -9,7 +9,7 @@ if not os.path.exists(SQL_HOME):
 
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'jfidsjfsdi7813y8hjds87hj'
-    SQLALCHMEY_COMMIT_ON_TEARDOWN = True
+    SQLALCHEMY_COMMIT_ON_TEARDOWN = True
 
     @staticmethod
     def init_app(app):
