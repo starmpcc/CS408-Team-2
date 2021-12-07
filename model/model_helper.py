@@ -13,7 +13,10 @@ class Model:
         self.tokenizer = PreTrainedTokenizerFast.from_pretrained("skt/kogpt2-base-v2",
             bos_token='</s>', eos_token='</s>', unk_token='<unk>',
             pad_token='<pad>', mask_token='<mask>')
-
+        if torch.cuda.is_available():
+            self.device = 'cuda'
+        else: self.device = 'cpu'
+        self.model.to(self.device)
 
     def generate(self, inp, context):
         estimated_num_tokens = len(inp.split(' '))
@@ -30,8 +33,8 @@ class Model:
         return out, context
 
     def forward(self, inp):
-        input_ids = self.tokenizer.encode(inp)
-        gen_ids = self.model.generate(torch.tensor([input_ids]),
+        input_ids = torch.tensor([self.tokenizer.encode(inp)], device = self.device)
+        gen_ids = self.model.generate(input_ids,
             max_length=128,
             repetition_penalty=2.0,
             pad_token_id=self.tokenizer.pad_token_id,
@@ -39,7 +42,7 @@ class Model:
             bos_token_id=self.tokenizer.bos_token_id,
             use_cache=True)
         out = self.tokenizer.decode(gen_ids[0,:].tolist())
-
+        
         return out
 
 if __name__ == "__main__":
