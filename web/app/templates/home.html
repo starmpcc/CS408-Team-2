@@ -4,17 +4,7 @@
 {% block title %}Interactive Novel{% endblock %}
 
 {% block page_content %}
-<div class="page-header">
-  {% with messages = get_flashed_messages() %}
-  
-    {% if messages %}
-        {% for message in messages %}
-            <div class="alert alert-info">
-                <strong> 작업을 선택하세요. </strong>
-            </div>
-        {% endfor %}
-    {% endif %}
-  {% endwith %}
+
 
 <h2> 한국어 대화형 소설 작성 시스템 </h2>
 <br>
@@ -26,7 +16,6 @@
       <h3>  로그인 </h3>
       <br>
           {{ wtf.quick_form(login) }}
-          {{ wtf.quick_form(register) }}
       <br>
     </div>
 </div>

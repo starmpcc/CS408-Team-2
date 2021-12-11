@@ -5,14 +5,18 @@
 
 
 {%block page_content%}
+{% if novel_list %}
 <div id = "saved_novels" class = "col-md-6">
     <h3>  작성된 소설 선택 </h3>
     <br>
     {{ wtf.quick_form(selectlist) }}
     <br>
-
 </div>
 <div id="interactive_novel" class="col-md-6">
+{% else %}
+<div id="interactive_novel" class="col-md-6 col-md-offset-3">
+{% endif %}
+
     <h3>  새로운 소설 작성 </h3>
     <br>
         {{ wtf.quick_form(newnovel) }}

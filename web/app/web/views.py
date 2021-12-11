@@ -5,7 +5,7 @@ import numpy as np
 import os, sys, datetime
 from flask import Flask, flash, request, render_template, session, redirect, url_for, current_app, Response
 from . import web
-from .forms import NewNovelForm, LoginForm, GetUserTextForm, CurrentNovelDisplay, NovelSelectForm, RegisterButton, RegisterForm, SaveButton
+from .forms import NewNovelForm, LoginForm, GetUserTextForm, NovelSelectForm, RegisterForm
 import requests, json
 
 from ..datastore import *
@@ -23,12 +23,11 @@ def root():
 def home():
 
     login = LoginForm()
-    register = RegisterButton()
 
     if session.get('id'):
         redirect(url_for(".saved_novels"))
-
-    if register.register.data == True:
+    print(login.register.data)
+    if login.register.data == True:
         return redirect(url_for(".register", register =RegisterForm()))
 
     elif login.validate_on_submit() and login.submit.data == True:
@@ -39,7 +38,7 @@ def home():
         else:
             flash("Wrong Username or Password")
 
-    return render_template('home.html', login=login, register = RegisterButton())
+    return render_template('home.html', login=login)
 
 
 @web.route('/register', methods=['GET', 'POST'])
@@ -66,7 +65,6 @@ def saved_novels():
 
     form.title.choices = novel_list
 
-
     if newform.submit.data and newform.validate_on_submit():
         session["history"] = []
         session["context"] = ""
@@ -74,18 +72,17 @@ def saved_novels():
         return redirect(url_for(".interactive_novel",
                                 novel_title=session["title"],
                                 dialogue = session["history"],
-                                next_from=GetUserTextForm(),
-                                save=SaveButton()))
-
+                                next_from=GetUserTextForm()))
     elif form.load.data:
         novel = load_novel(form.title.data)
         session["novel_id"] = novel.id
         session["title"] = novel.title
         session["history"] = novel.history
+        session["context"] = novel.context
 
-        return redirect(url_for('.interactive_novel', novel_title = novel.title, dialogue = novel.history, next_form = GetUserTextForm(), save = SaveButton()))
+        return redirect(url_for('.interactive_novel', novel_title = novel.title, dialogue = novel.history, next_form = GetUserTextForm()))
 
-    return render_template('saved_novels.html', selectlist = form, newnovel = newform)
+    return render_template('saved_novels.html', selectlist = form, newnovel = newform, novel_list = novel_list)
 
 @web.route('/not_ready', methods=['GET', 'POST'])
 def not_ready():
@@ -94,20 +91,16 @@ def not_ready():
 
 @web.route('/interactive_novel', methods=['GET', 'POST'])
 def interactive_novel():
-    if "my_choice" not in session or session["my_choice"] is None:
-        next_form = GetUserTextForm()
-    else:
-        next_form = GetUserTextForm(user_enter=session["my_choice"])
+    next_form = GetUserTextForm()
 
-    save_form = SaveButton()
-    if save_form.save.data == True:
+    if next_form.save.data == True:
         novel_id = session.get('novel_id')
         session["novel_id"] = save_novel(session["id"], novel_id, session["title"], session["history"], session["context"])
+        flash("Succesfully Saved!")
         return render_template("interactive_novel.html",
                                novel_title=session["title"],
                                dialogue = session["history"],
-                               next_form=GetUserTextForm(),
-                               save = SaveButton())
+                               next_form=GetUserTextForm())
 
     if next_form.validate_on_submit() and next_form.submit.data == True:
         user_enter = next_form.user_enter.data
@@ -127,13 +120,10 @@ def interactive_novel():
         return render_template("interactive_novel.html",
                                novel_title=session["title"],
                                dialogue = session["history"],
-                               next_form=newform,
-                               save = SaveButton())
+                               next_form=newform)
 
 
     return render_template("interactive_novel.html",
                            novel_title=session["title"],
                            dialogue = session["history"],
-                           next_form=GetUserTextForm(),
-                           save = SaveButton())
-
+                           next_form=GetUserTextForm())

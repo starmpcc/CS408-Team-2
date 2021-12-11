@@ -1,18 +1,24 @@
 #dialogue_container{
     max-height:500px;
     overflow:auto;
+    padding-top: 10px
 }
 
-.history_user{
+.chat_user{
     background-color: rgb(216, 216, 216);
     padding:5px;
     border-radius:10px;
     border:5px solid white;
+    display: inline-block;
+    float: right;
 }
 
-.history_model{
+
+
+.chat_model{
     background-color: rgb(216, 216, 216);
     padding:5px;
     border-radius:10px;
     border:5px solid white;
+    display: inline-block;
 }
